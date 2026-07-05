@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  color: #31241d;
+  background: #faf1e4;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
+  line-height: 1.75;
+}
+
+body {
+  width: 100%;
+  max-width: 920px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+  color: #31241d;
+}
+
+main {
+  background: #fff8ee;
+  border: 1px solid rgba(49, 36, 29, 0.12);
+  border-radius: 8px;
+  padding: 40px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.35;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(49, 36, 29, 0.12);
+  font-size: 1.35rem;
+}
+
+h3 {
+  margin-top: 28px;
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 16px 0;
+}
+
+ul {
+  padding-left: 1.4rem;
+}
+
+li {
+  margin: 8px 0;
+}
+
+a {
+  color: #866045;
+}
+
+p,
+li {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 24px 14px 48px;
+  }
+
+  main {
+    padding: 24px 18px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
