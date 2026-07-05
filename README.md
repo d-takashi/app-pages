@@ -9,16 +9,16 @@
 - 必要に応じた Marketing URL
 - 必要に応じた Terms URL
 
-## 公開方針
+## Hosting
 
-GitHub Pagesで `docs/` を公開ディレクトリとして使う想定です。
+This site is published with GitHub Pages.
 
-想定URL:
+Public URLs:
 
 - Site root: `https://d-takashi.github.io/app-pages/`
 - Apps: `https://d-takashi.github.io/app-pages/apps/`
 
-## ディレクトリ構成
+## Structure
 
 ```text
 docs/
@@ -36,25 +36,19 @@ docs/
       terms/
         index.html
         legal.css
-    perfect-pomodoro/
-      index.html
-      support/
-        index.html
-      privacy/
-        index.html
 ```
 
-## 新しいアプリを追加するとき
+## Adding An App
 
-1. `docs/apps/<app-slug>/` を作成する。
-2. `index.html` を作成し、アプリ紹介またはMarketing URL用ページにする。
-3. `support/index.html` を作成するか、App Store Connectに直接設定する問い合わせフォームURLを決める。
-4. `privacy/index.html` を作成し、アプリの実装実態に合うPrivacy Policyを置く。
-5. 必要なら `terms/index.html` を作成する。
-6. `docs/apps/index.html` と `docs/index.html` から辿れるようにリンクを追加する。
-7. App Store ConnectのURL欄を更新する。
+1. Create `docs/apps/<app-slug>/`.
+2. Add `index.html` for the app overview or Marketing URL.
+3. Add `support/index.html` or use a direct support/contact URL in App Store Connect.
+4. Add `privacy/index.html` with the app's Privacy Policy.
+5. Add `terms/index.html` when Terms of Use are needed.
+6. Link the app from `docs/apps/index.html`.
+7. Update the relevant URLs in App Store Connect.
 
-## App Store Connect URL例
+## App Store Connect URL Examples
 
 Log:
 
@@ -62,26 +56,3 @@ Log:
 - Privacy Policy URL: `https://d-takashi.github.io/app-pages/apps/log/privacy/`
 - Terms URL: `https://d-takashi.github.io/app-pages/apps/log/terms/`
 - Support URL: Logの問い合わせフォームURLを直接設定する想定
-
-Perfect Pomodoro:
-
-- Marketing URL: `https://d-takashi.github.io/app-pages/apps/perfect-pomodoro/`
-- Privacy Policy URL: `https://d-takashi.github.io/app-pages/apps/perfect-pomodoro/privacy/`
-- Support URL: `https://d-takashi.github.io/app-pages/apps/perfect-pomodoro/support/`
-
-## 移植元
-
-Logのlegalページは `rec-life` リポジトリの以下から移植しています。
-
-- `/Users/takashi/Documents/all-i-need/10_repos/rec-life/docs/legal/privacy-policy.html`
-- `/Users/takashi/Documents/all-i-need/10_repos/rec-life/docs/legal/terms.html`
-- `/Users/takashi/Documents/all-i-need/10_repos/rec-life/docs/legal/legal.css`
-
-移植時点では、元の `rec-life` 側のファイルは変更していません。
-
-## TODO
-
-- Logアプリ本体やfastlane metadata内に残っている旧URL `https://d-takashi.github.io/log-privacy-policy/` を、新URLへ切り替えるか判断する。
-- 既存の `d-takashi/log-privacy-policy` リポジトリを残すか、リダイレクト・アーカイブするか判断する。
-- Perfect Pomodoroの各ページ本文は、アプリ実装とApp Store申請内容に合わせて作成する。
-- Perfect PomodoroのPrivacy Policyは、データ収集、端末内保存、カメラ・写真・通知などの利用実態を確認してから最終化する。
