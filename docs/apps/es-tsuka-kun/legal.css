@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  color: #111827;
+  background: #f5f7ff;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
+  line-height: 1.75;
+}
+
+body {
+  width: 100%;
+  max-width: 920px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+  color: #111827;
+}
+
+main {
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.10);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 12px 32px rgba(17, 24, 39, 0.05);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.35;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(17, 24, 39, 0.10);
+  font-size: 1.35rem;
+}
+
+h3 {
+  margin-top: 28px;
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 16px 0;
+}
+
+ul {
+  padding-left: 1.4rem;
+}
+
+li {
+  margin: 8px 0;
+}
+
+a {
+  color: #175cff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  padding: 12px;
+  vertical-align: top;
+  text-align: left;
+}
+
+th {
+  width: 32%;
+  background: #eef2ff;
+  font-weight: 700;
+}
+
+p,
+li,
+td {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.meta {
+  color: #4b5563;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 24px 14px 48px;
+  }
+
+  main {
+    padding: 24px 18px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  table,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  th {
+    border-bottom: 0;
+  }
+}

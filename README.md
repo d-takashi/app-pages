@@ -17,6 +17,10 @@ Public URLs:
 
 - Site root: `https://d-takashi.github.io/app-pages/`
 - Apps: `https://d-takashi.github.io/app-pages/apps/`
+- 就活ES通過くん: `https://d-takashi.github.io/app-pages/apps/es-tsuka-kun/`
+- 就活ES通過くん 利用規約: `https://d-takashi.github.io/app-pages/apps/es-tsuka-kun/terms/`
+- 就活ES通過くん プライバシーポリシー: `https://d-takashi.github.io/app-pages/apps/es-tsuka-kun/privacy/`
+- 就活ES通過くん 特定商取引法に基づく表記: `https://d-takashi.github.io/app-pages/apps/es-tsuka-kun/commercial-transaction/`
 
 ## Structure
 
